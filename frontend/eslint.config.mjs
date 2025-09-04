@@ -9,13 +9,13 @@ export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   {
-    "ignores": [
+    ignores: [
       "dist", // Contains 3rd party code
       "public", // Contains 3rd party code
     ],
   },
   {
-    "rules": {
+    rules: {
       "no-empty": "off", // Temporarily disabled until codebase conformant
       "no-empty-pattern": "off", // Temporarily disabled until codebase conformant
       "no-useless-escape": "off", // Temporarily disabled until codebase conformant
@@ -37,8 +37,8 @@ export default defineConfig(
     languageOptions: {
       globals: {
         ...globals.browser,
-      }
-    }
+      },
+    },
   },
   // Config for node scripts
   {
@@ -50,7 +50,7 @@ export default defineConfig(
     languageOptions: {
       globals: {
         ...globals.node,
-      }
-    }
+      },
+    },
   },
 );
